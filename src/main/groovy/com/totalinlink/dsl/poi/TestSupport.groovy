@@ -14,6 +14,20 @@ class TestSupport {
         lst << [12, 3]
 
         workbook (filename: "/Users/wangguangyu/temp/test.xlsx") {
+//            cellStyle (
+//                    // align(align: StyleWrapper.center, verticalAlign: StyleWrapper.vertical_top),
+//                    //// align -> [center|left|right]
+//                    //// verticalAlign -> [vertical_top|vertical_bottom|vertical_center]
+//                    // border(bottom: StyleWrapper.double,
+//                              top: StyleWrapper.thin,
+//                              left: StyleWrapper.medium,
+//                              right: StyleWrapper.dash),  //// each of values -> [double|thin|medium|dash|hair|thick]
+//                    // borderColor(bottom: StyleWrapper.double,
+//                              top: StyleWrapper.thin,
+//                              left: StyleWrapper.medium,
+//                              right: StyleWrapper.dash),  //// each of values -> color set
+//                    //
+//            )
             sheet (name: "aa") {
                 // name: "aa"
                 mergedRegion (range: [0, 1, 0, 1])
